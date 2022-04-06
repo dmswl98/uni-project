@@ -38,7 +38,12 @@ const Header = () => {
           >
             로그인
           </Button>
-          <Button className={["darkblue", styles["button-40"]].join(" ")}>
+          <Button
+            className={["darkblue", styles["button-40"]].join(" ")}
+            onClick={() => {
+              navigate("/signup");
+            }}
+          >
             회원가입
           </Button>
         </div>
